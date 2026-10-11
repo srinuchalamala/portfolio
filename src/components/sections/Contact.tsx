@@ -12,11 +12,10 @@ import {
   MessageSquare,
   CheckCircle2,
   AlertCircle,
-  Linkedin,
-  Github,
   Clock,
   Shield
 } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from '@/components/ui/Icons';
 import { createContactMessage } from '@/services/db';
 
 interface ContactProps {
@@ -203,7 +202,7 @@ export function Contact({
                     className="p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
                     aria-label="GitHub"
                   >
-                    <Github className="w-4 h-4" />
+                    <GithubIcon className="w-4 h-4" />
                   </a>
                   <a
                     href={linkedin}
@@ -212,7 +211,7 @@ export function Contact({
                     className="p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
                     aria-label="LinkedIn"
                   >
-                    <Linkedin className="w-4 h-4" />
+                    <LinkedinIcon className="w-4 h-4" />
                   </a>
                 </div>
               </div>

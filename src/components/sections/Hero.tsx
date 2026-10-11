@@ -10,12 +10,11 @@ import {
   ArrowRight,
   FileText,
   Mail,
-  Github,
-  Linkedin,
   Lock,
   Cpu,
   CheckCircle2
 } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from '@/components/ui/Icons';
 import { Profile } from '@/types';
 
 interface HeroProps {
@@ -119,7 +118,7 @@ export function Hero({ profile }: HeroProps) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 hover:text-cyan-400 transition-colors"
               >
-                <Github className="w-4 h-4" />
+                <GithubIcon className="w-4 h-4" />
                 <span>GitHub</span>
               </a>
               <span className="text-slate-700">/</span>
@@ -129,7 +128,7 @@ export function Hero({ profile }: HeroProps) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 hover:text-cyan-400 transition-colors"
               >
-                <Linkedin className="w-4 h-4" />
+                <LinkedinIcon className="w-4 h-4" />
                 <span>LinkedIn</span>
               </a>
               <span className="text-slate-700">/</span>

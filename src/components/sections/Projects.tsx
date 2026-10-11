@@ -10,12 +10,12 @@ import { Button } from '@/components/ui/Button';
 import {
   FolderGit2,
   ExternalLink,
-  Github,
   ArrowRight,
   Shield,
   Layers,
   CheckCircle2
 } from 'lucide-react';
+import { GithubIcon } from '@/components/ui/Icons';
 import { Project } from '@/types';
 
 interface ProjectsProps {
@@ -157,7 +157,7 @@ export function Projects({ projects }: ProjectsProps) {
                       className="p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 transition-colors"
                       aria-label="View Source on GitHub"
                     >
-                      <Github className="w-4 h-4" />
+                      <GithubIcon className="w-4 h-4" />
                     </a>
                   )}
 

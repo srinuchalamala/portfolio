@@ -9,7 +9,6 @@ import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import {
   ArrowLeft,
-  Github,
   ExternalLink,
   ShieldAlert,
   Lightbulb,
@@ -19,6 +18,7 @@ import {
   UserCheck,
   Layers
 } from 'lucide-react';
+import { GithubIcon } from '@/components/ui/Icons';
 import type { Metadata } from 'next';
 
 interface ProjectPageProps {
@@ -110,7 +110,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-cyan-400 hover:text-cyan-300 transition-colors"
                   >
-                    <Github className="w-4 h-4" />
+                    <GithubIcon className="w-4 h-4" />
                     <span>Source Code</span>
                   </a>
                 )}

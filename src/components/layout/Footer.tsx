@@ -2,7 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Shield, Github, Linkedin, Mail, Phone, MapPin, Lock, ArrowUp } from 'lucide-react';
+import { Shield, Mail, Phone, MapPin, Lock, ArrowUp } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from '@/components/ui/Icons';
 
 interface FooterProps {
   email?: string;
@@ -53,7 +54,7 @@ export function Footer({
                 className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
                 aria-label="GitHub Profile"
               >
-                <Github className="w-4 h-4" />
+                <GithubIcon className="w-4 h-4" />
               </a>
               <a
                 href={linkedin}
@@ -62,7 +63,7 @@ export function Footer({
                 className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
                 aria-label="LinkedIn Profile"
               >
-                <Linkedin className="w-4 h-4" />
+                <LinkedinIcon className="w-4 h-4" />
               </a>
               <a
                 href={`mailto:${email}`}
