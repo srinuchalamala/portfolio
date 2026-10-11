@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="smBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="flaskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#smBg)"/>
+
+  <!-- Sub-grid -->
+  <g opacity="0.08" stroke="#cbd5e1" stroke-width="1">
+    <line x1="0" y1="150" x2="1200" y2="150" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="450" x2="1200" y2="450" />
+    <line x1="0" y1="600" x2="1200" y2="600" />
+    <line x1="300" y1="0" x2="300" y2="675" />
+    <line x1="600" y1="0" x2="600" y2="675" />
+    <line x1="900" y1="0" x2="900" y2="675" />
+  </g>
+
+  <!-- Title -->
+  <text x="120" y="90" font-family="system-ui, sans-serif" font-weight="800" font-size="30" fill="#f8fafc">Sketch Maker // Python Flask Engine</text>
+  <text x="120" y="125" font-family="monospace" font-size="14" fill="#a78bfa">IIIT HYDERABAD SUMMER INTERNSHIP // COMPUTER VISION ALGORITHMS</text>
+
+  <!-- Comparison Side-by-Side Windows -->
+  <!-- Left Box: Source Image -->
+  <g transform="translate(120, 160)">
+    <rect width="440" height="420" rx="14" fill="#1e293b" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <rect x="0" y="0" width="440" height="40" rx="14" fill="#0f172a"/>
+    <text x="30" y="26" font-family="monospace" font-size="13" font-weight="700" fill="#94a3b8">RAW INPUT PHOTO (RGB)</text>
+    
+    <!-- Graphic representing photo -->
+    <rect x="30" y="70" width="380" height="300" rx="10" fill="#334155"/>
+    <circle cx="150" cy="180" r="45" fill="#38bdf8" opacity="0.8"/>
+    <path d="M 60 340 L 160 220 L 260 310 L 320 250 L 380 340 Z" fill="#64748b"/>
+    <circle cx="340" cy="130" r="24" fill="#fbbf24"/>
+    <text x="220" y="360" font-family="monospace" font-size="12" text-anchor="middle" fill="#94a3b8">Original 1080p Image Matrix</text>
+  </g>
+
+  <!-- Transform Flow Arrow -->
+  <g transform="translate(575, 340)">
+    <circle cx="25" cy="25" r="32" fill="#8b5cf6" />
+    <path d="M 16 25 L 34 25 M 26 17 L 34 25 L 26 33" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="25" y="75" font-family="monospace" font-size="11" font-weight="700" text-anchor="middle" fill="#c4b5fd">OPENCV / FLASK</text>
+  </g>
+
+  <!-- Right Box: Output Pencil Sketch -->
+  <g transform="translate(640, 160)">
+    <rect width="440" height="420" rx="14" fill="#090d16" stroke="#8b5cf6" stroke-width="2"/>
+    <rect x="0" y="0" width="440" height="40" rx="14" fill="#1e1b4b"/>
+    <text x="30" y="26" font-family="monospace" font-size="13" font-weight="700" fill="#c4b5fd">PROCESSED GRAPHITE SKETCH (DODGE &amp; BLUR)</text>
+
+    <!-- Graphic representing sketch -->
+    <rect x="30" y="70" width="380" height="300" rx="10" fill="#020617" stroke="rgba(255,255,255,0.15)"/>
+    
+    <!-- Stylized hatching / sketch lines -->
+    <circle cx="150" cy="180" r="45" fill="none" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M 60 340 L 160 220 L 260 310 L 320 250 L 380 340" fill="none" stroke="#f8fafc" stroke-width="2.5"/>
+    <circle cx="340" cy="130" r="24" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+    <line x1="70" y1="280" x2="140" y2="330" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="80" y1="290" x2="150" y2="340" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="270" y1="290" x2="340" y2="330" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="280" y1="300" x2="350" y2="340" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="220" y="360" font-family="monospace" font-size="12" text-anchor="middle" fill="#38bdf8">Rendered Pencil Sketch Matrix</text>
+  </g>
+</svg>
